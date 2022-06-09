@@ -10,7 +10,7 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 const init = () => {
@@ -84,10 +84,23 @@ const init = () => {
             type: "input",
             name: "tips",
             message: "What does the user need to know about using the repo?."
+        },
+        {
+            type: "input",
+            name: "contributers",
+            message: "Who contributed to this project?"
         }
-    ]).then(answers => console.log(answers))
+    ]).then(readmeData => console.log(readmeData))
 }
 
 // Function call to initialize app
-init();
+init()
+// .then(readmeData => {
+//     const pageMarkdown = writeFile(readmeData)
+
+//     fs.writeFile("./dist/README.md", pageMarkdown, err => {
+//         if (err) throw err;
+//         console.log("README complete! Check out README.md to see the output!");
+//     });
+// });
 
