@@ -1,64 +1,53 @@
+# everything
 
-    # everything
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-    
-    [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-    
+## Description
 
-    ## Description
+everything
 
-    everything
+## Table of Contents
 
-    ## Table of Contents
+- [Installation](#installation)
 
-    * [Installation](#installation)
+- [Usage](#usage)
 
-    * [Usage](#usage)
+- [Liscense](#liscense)
 
-    * [Liscense](#liscense)
+- [Credits](#credits)
 
-    * [Credits](#credits)
+- [Tests](#tests)
 
-    * [Tests](#tests)
+- [Contributions](#Contributions)
 
-    * [Contributions](#Contributions)
+- [Questions](#questions)
 
-    * [Questions](#questions)
+## Installation
 
-    ## Installation
+To install necessary dependencies run the following command: npm i
 
-    To install necessary dependencies run the following command: npm i
+## Usage
 
-   
-    ## Usage
+everythingeverything
 
-    everythingeverything
-    
+## Liscense
 
-    
-    ## Liscense
+This project is liscensed under the APACHE 2.0 liscense.
 
-    This project is liscensed under the APACHE 2.0 liscense.
+## Credits
 
-    
+everything
 
-    ## Credits
+## Tests
 
-    everything
+To test this page run the following test: npm test
 
-    ## Tests
+## Contributions
 
-    To test this page run the following test: npm test
+everything
 
-   
-    ## Contributions
+## Questions
 
-    everything
-    
+For questions about this project, reach out directly at everything
 
-    ## Questions
-
-    For questions about this project, reach out directly at everything
-
-    You can find more of my work at https://github.com/everything/
-    
+You can find more of my work at https://github.com/everything/
