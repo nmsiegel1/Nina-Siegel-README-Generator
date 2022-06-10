@@ -1,23 +1,70 @@
 const generateLiscense = liscenseInfo => {
-    if (!liscenseInfo) {
+    if (liscenseInfo == "None") {
         return '';
-    }
+    } else {
     return `
-    ## Liscense 
-    
+    ## Liscense
+
     This project is liscensed under the ${liscenseInfo} liscense.
-    
+
+    `
+    }
+}
+
+const liscenseBadge = badgeInfo => {
+    if (badgeInfo === "None") {
+        return '';
+    } else if (badgeInfo === "MIT") {
+    return `
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    `
+    } else if (badgeInfo === "APACHE 2.0") {
+        return `
+    [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+    `
+    } else if (badgeInfo === "GPL 3.0") {
+        return `
+    [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+    `
+    } else {
+        return `
+    [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+    `
+    }
+}
+
+const generateUsage = tipsText => {
+    if (!tipsText) {
+        return '';
+    } else 
+    return `
+    ## Usage
+
+    ${tipsText}
+    `
+}
+
+const generateContributions = contributionsText => {
+    if (!contributionsText) {
+        return '';
+    } else 
+    return `
+    ## Contributions
+
+    ${contributionsText}
     `
 }
 
 module.exports = readmeData => {
-    const {liscense, ...body} = readmeData;
+    const {liscense, tips, contributions, ...body} = readmeData;
     return`
-    #${body.name}
+    # ${body.project}
+
+    ${liscenseBadge(liscense)}
 
     ## Description
 
-    ${body.about}
+    ${body.description}
 
     ## Table of Contents
 
@@ -27,39 +74,37 @@ module.exports = readmeData => {
 
     * [Liscense](#liscense)
 
-    * [Contributing](#contributing)
+    * [Credits](#credits)
 
     * [Tests](#tests)
 
-    *[Questions](#questions)
+    * [Contributions](#Contributions)
 
-    ##Installation
+    * [Questions](#questions)
 
-    To install dependencies run the following command:
+    ## Installation
 
-    ${body.install}
+    To install necessary dependencies run the following command: ${body.install}
 
-    ## Usage
-
-    ${body.tips}
+   ${generateUsage(tips)}
 
     ${generateLiscense(liscense)}
 
-    ## Contributing
+    ## Credits
 
-    Made by ${body.contributers}
+    ${body.credits}
 
     ## Tests
 
-    To test this page run the following test:
+    To test this page run the following test: ${body.tests}
 
-    ${body.tests}
+   ${generateContributions(contributions)}
 
     ## Questions
 
-    For questions about this project, reach out through:
-    ${body.username}
-    ${body.email}
+    For questions about this project, reach out directly at ${body.email}
+
+    You can find more of my work at https://github.com/${body.username}/
     `
 
 
