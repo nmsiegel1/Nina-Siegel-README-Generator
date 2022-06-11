@@ -52,7 +52,7 @@ const liscenseToc = liscense => {
 
 // adds contributions to the table of contents if the user adds information about contributions
 const contributionsToc = contributions => {
-    if (contributions === "None") {
+    if (!contributions) {
         return '';
     } else {
         return `
