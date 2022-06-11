@@ -1,18 +1,14 @@
-# everything
-
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# What's for dinner?
 
 ## Description
 
-everything
+lkj
 
 ## Table of Contents
 
 - [Installation](#installation)
 
 - [Usage](#usage)
-
-- [Liscense](#liscense)
 
 - [Credits](#credits)
 
@@ -28,26 +24,18 @@ To install necessary dependencies run the following command: npm i
 
 ## Usage
 
-everythingeverything
-
-## Liscense
-
-This project is liscensed under the APACHE 2.0 liscense.
+Search for a recipe
 
 ## Credits
 
-everything
+Made by Nina Siegel
 
 ## Tests
 
 To test this page run the following test: npm test
 
-## Contributions
-
-everything
-
 ## Questions
 
-For questions about this project, reach out directly at everything
+For questions about this project, reach out directly at nm.moeller@gmail.com
 
-You can find more of my work at https://github.com/everything/
+You can find more of my work at https://github.com/nmsiegel1/

@@ -1,24 +1,16 @@
-// TODO: Include packages needed for this application
+// load required modules
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./src/page-template.js");
-// const Choices = require("inquirer/lib/objects/choices");
 
-// // TODO: Create an array of questions for user input
-// const questions = [
 
-// ];
-
-// // TODO: Create a function to write README file
-// function writeFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
 const init = () => {
+// questions asked by inquierer
     inquirer.prompt([
         {
             type: "input",
             name: "username",
-            message: "What is your GitHub username? (Required)",
+            message: "What is your GitHub username?",
             validate: usernameInput => {
                 if (usernameInput) {
                     return true;
@@ -31,12 +23,20 @@ const init = () => {
         {
             type: "input",
             name: "email",
-            message: "What is your email address? (Required)"
+            message: "What is your email address?",
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your email');
+                    return false;
+                }
+            }
         },
         {
             type: "input",
             name: "project",
-            message: "What is your project name? (Required)",
+            message: "What is your project name?",
             validate: projectNameInput => {
                 if (projectNameInput) {
                     return true;
@@ -49,7 +49,7 @@ const init = () => {
         {
             type: "input",
             name: "description",
-            message: "Please provide a description for your project. (Required)",
+            message: "Please provide a description for your project.",
             validate: descriptionInput => {
                 if (descriptionInput) {
                     return true;
@@ -80,7 +80,15 @@ const init = () => {
         {
             type: "input",
             name: "tips",
-            message: "What does the user need to know about using the repo?"
+            message: "How do you use this repo?",
+            validate: usageInput => {
+                if (usageInput) {
+                    return true;
+                } else {
+                    console.log('How do you use this project?');
+                    return false;
+                }
+            }
         },
         {
             type: "input",
@@ -90,11 +98,23 @@ const init = () => {
         {
             type: "input",
             name: "credits",
-            message: "Who contributed to this project?"
+            message: "Who contributed to this project?",
+            validate: creditsInput => {
+                if (creditsInput) {
+                    return true;
+                } else {
+                    console.log('Who created this project?');
+                    return false;
+                }
+            }
         }
     ]).then(answers => {
+// shows the users the answers in the terminal
+        console.log(answers)
+// sends data to the template to prepare the file
         const pageMarkdown = generateMarkdown(answers)
-    
+
+// writes the README.md file
         fs.writeFile("./dist/README.md", pageMarkdown, err => {
             if (err) throw err;
             console.log("README complete! Check out README.md to see the output!");
