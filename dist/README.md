@@ -1,16 +1,17 @@
 
-# What's for dinner?
+# lkj
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-This is a recipe finder app. It can also generate a random recipe or save your favorites.
+lkj
 
 ## Table of Contents
 
-* [Installation](#installation)
+
+* [Install](#install)
 
 * [Usage](#usage)
 
@@ -19,20 +20,22 @@ This is a recipe finder app. It can also generate a random recipe or save your f
 
 * [Credits](#credits)
 
+
 * [Tests](#tests)
 
 
-* [Contributions](#Contributions)
+* [Contributions](#contributions)
 
 * [Questions](#questions)
 
-## Installation
 
-To install necessary dependencies run the following command: npm i
+## Install
+
+npm i
 
 ## Usage
 
-Use the search bar in the window to search for any type of recipe you'd like. If you want to save the recipe hit the save button. You can also select view recipe and it will open a new tab with that recipes URL.
+lkj
 
 
 ## Liscense
@@ -41,19 +44,22 @@ Use the search bar in the window to search for any type of recipe you'd like. If
 
 ## Credits
 
-Made by Nina Siegel
+lkj
 
 ## Tests
 
-To test this page run the following test: npm test
+To test this page run the following test: 
+## Tests
+
+npm test
 
 
 ## Contributions
 
-If you would like to contribute, reach out. 
+lkj
 
 ## Questions
 
-For questions about this project, reach out directly at nm.moeller@gmailcom
+For questions about this project, reach out directly at lkj
 
-You can find more of my work at https://github.com/nmsiegel1/
+You can find more of my work at https://github.com/lkj/
