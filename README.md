@@ -8,8 +8,9 @@ This is a command line application that generates a professional README.md file 
 
 ## Table of Contents
 
-* [Made-With](#made-with)
+* [Made-With](#Made-with)
 * [Notes](#Notes)
+* [Install](#Install)
 * [Video](#Video)
 * [Screenshots](#Screenshots)
 * [Liscense](#Liscense)
@@ -21,6 +22,10 @@ This is a command line application that generates a professional README.md file 
 * Node.Js
 * ES6
 
+## Install
+
+To install dependencies, run npm i
+
 ## Notes
 
 * With the aid of inquierer prompts, sections titled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions are generated in the README.md file
@@ -29,6 +34,8 @@ This is a command line application that generates a professional README.md file 
 * If the user selects a liscence, the badge for that liscense is displayed at the top of the page
 
 ## Video
+
+https://watch.screencastify.com/v/WxJcaHHyYCGGpUtEAK0e
 
 ## Screenshots 
 
