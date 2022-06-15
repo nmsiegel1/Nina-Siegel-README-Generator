@@ -1,12 +1,12 @@
 
-# lkj
+# What's for dinner?
 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description
 
-lkj
+A recipe finder app
 
 ## Table of Contents
 
@@ -24,7 +24,6 @@ lkj
 * [Tests](#tests)
 
 
-* [Contributions](#contributions)
 
 * [Questions](#questions)
 
@@ -35,16 +34,16 @@ npm i
 
 ## Usage
 
-lkj
+Use the web application to search for recipes, get a random recipe and save favorites
 
 
 ## Liscense
 
- This project is liscensed under the MIT liscense.
+ This project is liscensed under the GPL 3.0 liscense.
 
 ## Credits
 
-lkj
+Made by user
 
 ## Tests
 
@@ -54,12 +53,9 @@ To test this page run the following test:
 npm test
 
 
-## Contributions
-
-lkj
 
 ## Questions
 
-For questions about this project, reach out directly at lkj
+For questions about this project, reach out directly at email@email.com
 
-You can find more of my work at https://github.com/lkj/
+You can find more of my work at https://github.com/username/
