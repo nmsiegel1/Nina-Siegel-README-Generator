@@ -1,4 +1,4 @@
-# 09 Nina Siegel Professional README Generator
+# 09 Professional README Generator
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
